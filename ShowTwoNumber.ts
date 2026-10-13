@@ -6,3 +6,12 @@ function getTwoNumbers(): void {
     getTwoNumbers();
     return;
   }
+
+  console.log("Введите второе число:");
+  num2 = parseFloat(prompt());
+  if (isNaN(num2)) {
+    console.log("Ошибка: введите корректное число.");
+    getTwoNumbers();
+    return;
+  }
+}
